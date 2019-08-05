@@ -2,20 +2,21 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "@emotion/styled"
 
-/*const Head = styled.header`
-  grid-area: nav;
-`;*/
+const Nav = styled.nav`
+  display: flex;
+  flex-direction: column;
+`;
 
-function Nav(){
+function Navbar(){
   return (
-    <nav>
+    <Nav>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/cv">Curriculum Vitae</Link></li>
         <li><Link to="/contact">Contact me</Link></li>
       </ul>
-    </nav>
+    </Nav>
   )
 }
 
-export default Nav;
+export default Navbar;

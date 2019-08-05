@@ -1,6 +1,7 @@
 import React from "react";
 import Header from './Header';
-import Nav from './Nav';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import styled from "@emotion/styled"
 
 const Container = styled.section`
@@ -23,11 +24,12 @@ const Layout = ({children}) => {
     <React.Fragment>
       <Container>
         <Header>
-          <Nav />
+          <Navbar />
         </Header>
         <main>
           {children}
         </main>
+        <Footer />
       </Container>
     </React.Fragment>
   )

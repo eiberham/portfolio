@@ -14,10 +14,6 @@ const Main = styled.div`
   grid-area: main;
 `;
 
-const Foot = styled.div`
-  grid-area: foot;
-`;
-
 export default () => {
   return (
     <Wrapper>
@@ -26,12 +22,21 @@ export default () => {
         body {
           background: #f2f2f2;
           margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
         }
         * {
           box-sizing: border-box;
         }
         a {
           text-decoration: none;
+        }
+        p {
+          margin: 0;
+          width: 90%;
+          text-align: justify;
         }
       `}
       />
@@ -46,9 +51,6 @@ export default () => {
             practices and stuff i've done.
           </p>
         </Main>
-        <Foot>
-          <a href="https://github.com/wwleak">Github</a>
-        </Foot>
       </Layout>
     </Wrapper>
   )
