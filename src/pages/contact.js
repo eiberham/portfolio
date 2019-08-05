@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
+import Layout from '../components/Layout';
 
 const Contact = () => {
   return (
-    <div>I'm the contact page</div>
+    <Layout>I'm the contact page</Layout>
   )
 }
 

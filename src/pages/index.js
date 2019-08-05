@@ -1,47 +1,55 @@
 import React from "react"
-import styled from '@emotion/styled';
 
-import Nav from "../components/Nav";
+import Layout from '../components/Layout';
+import styled from "@emotion/styled"
+import { Global, css } from "@emotion/core";
 
-const Div = styled.div`
-  margin: 0 auto;
-  max-width: 80vw;
-  padding: 3rem;
-  display: grid;
-  grid-template-rows: 20vh 30vh 1fr;
+const Wrapper = styled.main`
+    margin: 0;
+    padding: 0;
+    height: 100%;
 `;
 
-const Header = styled.header ` 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: gray;
-  padding: 1rem;
+const Main = styled.div`
+  grid-area: main;
 `;
 
-const Section = styled.section`
-
+const Foot = styled.div`
+  grid-area: foot;
 `;
 
 export default () => {
   return (
-    <Div>
-      <Header>
-        Abraham.
-        <Nav />
-      </Header>
-      <Section>
-        <p>
-          Hey everyone, i love building things, been programming seven years ago
-          already as a fullstack developer but now i'm more biased to frontend.
-          Also i have some experience building hybrid simple mobile apps.
+    <Wrapper>
+      <Global
+        styles={css`
+        body {
+          background: #f2f2f2;
+          margin: 0;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        a {
+          text-decoration: none;
+        }
+      `}
+      />
+      <Layout>
+        <Main>
+          <p>
+            Hey everyone, i love building things, been programming seven years ago
+            already as a fullstack developer but now i'm more biased to frontend.
+            Also i have some experience building hybrid simple mobile apps.
 
-          You can find below a link to my github repository where you can find
-          practices and stuff i've done.
-        </p>
-
-        <a href="https://github.com/wwleak">Repository</a>
-      </Section>
-    </Div>
+            You can find below a link to my github repository where you can find
+            practices and stuff i've done.
+          </p>
+        </Main>
+        <Foot>
+          <a href="https://github.com/wwleak">Github</a>
+        </Foot>
+      </Layout>
+    </Wrapper>
   )
 }

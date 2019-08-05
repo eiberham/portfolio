@@ -1,8 +1,9 @@
 import React from "react";
+import Layout from '../components/Layout'
 
 const Cv = () => {
   return (
-    <div>I'm the CV page :)</div>
+    <Layout>I'm the CV page :)</Layout>
   )
 }
 
