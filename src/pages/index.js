@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from '../components/Layout';
 import styled from "@emotion/styled"
-import { Global, css } from "@emotion/core";
 
 const Wrapper = styled.main`
     margin: 0;
@@ -11,42 +10,25 @@ const Wrapper = styled.main`
 `;
 
 const Main = styled.div`
-  grid-area: main;
+  grid-column: main;
+  font-size: 1.4rem;
+  padding: 1rem;
 `;
 
 export default () => {
   return (
     <Wrapper>
-      <Global
-        styles={css`
-        body {
-          background: #f2f2f2;
-          margin: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-        }
-        * {
-          box-sizing: border-box;
-        }
-        a {
-          text-decoration: none;
-        }
-        p {
-          margin: 0;
-          width: 90%;
-          text-align: justify;
-        }
-      `}
-      />
       <Layout>
         <Main>
           <p>
-            Hey everyone, i love building things, been programming seven years ago
-            already as a fullstack developer but now i'm more biased to frontend.
+            <h1>I build things.</h1>
+            I've been programming for around 5+ years already as a full stack
+            developer but now i'm more biased to frontend.
+          </p><br />
+          <p>
             Also i have some experience building hybrid simple mobile apps.
-
+          </p><br />
+          <p>
             You can find below a link to my github repository where you can find
             practices and stuff i've done.
           </p>
