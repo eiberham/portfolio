@@ -8,7 +8,7 @@ This is a simple layout and a practice i did using gatsby (the static site gener
 
 It's not finished yet, the idea is to create a contact form that when submitted updates a mongodb database leveraging a graphql mutation.
 
-## How to test it ?
+## How to run it ?
 
 First, as usual clone the repo:
 
