@@ -20,8 +20,8 @@ export default () => {
     <Wrapper>
       <Layout>
         <Main>
+          <h1>I build things.</h1>
           <p>
-            <h1>I build things.</h1>
             I've been programming for around 5+ years already as a full stack
             developer but now i'm more biased to frontend.
           </p><br />

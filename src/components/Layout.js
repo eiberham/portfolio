@@ -5,6 +5,7 @@ import Footer from './Footer';
 import { Helmet } from "react-helmet"
 import styled from "@emotion/styled"
 import { css, Global } from "@emotion/core"
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Container = styled.section`
   background: white;
@@ -22,10 +23,22 @@ const Container = styled.section`
 `;
 
 const Layout = ({children}) => {
+  const {
+    site:{siteMetadata:site}
+  } = useStaticQuery(graphql`
+      {
+          site{
+              siteMetadata{
+                  title
+                  description
+              }
+          }
+      }
+  `)
   return (
     <React.Fragment>
       <Helmet>
-        <title>Abraham</title>
+        <title>{site.title}</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       </Helmet>
       <Global

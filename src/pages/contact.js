@@ -1,9 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
   return (
-    <Layout>I'm the contact page</Layout>
+    <Layout>
+      <ContactForm />
+    </Layout>
   )
 }
 
