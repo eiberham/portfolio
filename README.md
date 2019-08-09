@@ -8,7 +8,7 @@ In this case for the form submission a contact form to email service called form
   <img src="portfolio.png" />
 </p>
 
-It's not finished yet, the idea is to create a contact form that when submitted updates a mongodb database leveraging a graphql mutation.
+For form validation the formik package was used and work wonders.
 
 ## How to run it ?
 
